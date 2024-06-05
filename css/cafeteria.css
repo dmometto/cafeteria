@@ -1,14 +1,75 @@
 /* Zerar as margens de todos os elementos
 da página. Margens externas e internas */
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Reddit+Mono:wght@200..900&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box;  /* Utilizado para as margens e os padding partem de dentro da caixa, impedindoa a barra de rolagem */
 }
 
 /* Vamos adicionar uma imagem ao fundo do Header */
 header{
-    background-image: url('../img/cafeteria3.jpg');
+    background-image: url('../img/cafeteria2.jpg');
+    /* Ajustar o tamanho da imagem em 100% de largura */
+    background-size: 100%;
+    /* Ajustar a posição da imagem em X e Y */
+    background-position: 0px -300px;
+    padding: 30px;
     height: 500px;
+}
+h1{
+    /* Mudar cor da letra */
+    color: white;
+    /* Alterar o tipo de letra */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    /* Alterar o tamanho da caixa (alta ou baixa) */
+    text-transform: uppercase;
+    margin-right: 250px;
+}
+
+nav{
+    /* Tornando o conteúdo do nav flexivel. Isso permitr que
+    os elementos fiquem um ao lado do outro */
+    display: flex;
+    /* Alinhamento vertical dos elementos qye estão no nav */
+    align-items: center;
+}
+
+ul{
+    /* Retirar o marcador da lista */
+    list-style: none;
+}
+header ul li{
+    /* Vamos ajustar a disposição (display)
+    dos itens da lista em formato de linha */
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 7px;
+}
+header ul li:hover{
+    background-color: #3e2723;
+}
+header ul li a{
+    color: white;
+    /* Retirar o underline */
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header>h2{
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    font-family: "Reddit Mono", monospace;
+    font-size: 25pt;
+    font-weight: 450;
+    text-shadow: 0px 0px 5px yellow;
+}
+footer{
+    background-color: gray;
 }
 
