@@ -82,11 +82,52 @@ header>p{
     margin-right:50px;
     text-shadow: 0px 0px 5px black;
 }
+/* --------- Formatação da página index ---------- */
+main>h2{
+    font-family: "Lobster", sans-serif;
+    font-size: 30pt;
+    margin: 50px;
+    color: #3e2723;;
+}
+main #home p{
+    font-family: arial;
+    margin: 0px 50px 30px 50px;
+    text-align: justify; /* Alinhar dos dois lados */
+    font-size: 12pt;
+    /* O comando line-height define a altura da
+    linha (espaçamento entre linhas). Estamos usando
+    uma altura de 1,5, ou seja, o tamanho da fonte mais meio (metade)
+    do tamanho da fonte */
+    line-height: 18pt; /* Metade do Font-size + font-size ex: size 12/2 = 6 = 12 + 6 =18pt*/
+}
+main #imghome img{
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    /* Arredondar os cantos da imagem */
+    border-radius: 50%;
+    /* Vamos aplicar um efeito de transparência a imagem, usando
+    o comando opacity que varia entre 0 e 1, ou seja, se você aplicar
+    0.6, siguinifica que está usando 60% de opacidade. Isto represente
+    60% de visibilidade */
+    opacity: 0.6;
+    /* O comando transition realiza uma animação de transição
+    que você pode configurar com o tipo de transição e o tempo
+    da transição */
+    transition: ease 2s;
+}
+main #imghome{
+    text-align: center;
+}
+main #imghome img:hover{
+    opacity: 1;
+}
 footer{
     background-color: #3e2723;
     display: flex;
     justify-content: space-between;
     
+    height: 200px;
     padding: 35px;
     padding-top: 99px;
     padding-bottom: 106px;
