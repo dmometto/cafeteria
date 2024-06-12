@@ -246,9 +246,20 @@ main #categoria-cardapio{
 }
 
 #video iframe{
-    width: 80%;
+    width: 90%;
     height: 400px;
     margin: 50px;
+}
+
+/* --------- Página Quem Somos ---------  */
+
+#mapa{
+    text-align: center;
+}
+
+#mapa iframe{
+    width: 80%;
+    height: 500px;
 }
 
 footer{
