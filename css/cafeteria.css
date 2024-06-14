@@ -262,6 +262,56 @@ main #categoria-cardapio{
     height: 500px;
 }
 
+/* --------- Página Contato ---------  */
+
+form{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 10px;   
+}    
+
+input[type=text], 
+input[type=tel],
+input[type=email],
+select
+{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 0;
+    outline: none;  /* Retira a borda ativa do input (Quando clica não aparece mais borda) */
+    border-bottom: 1px solid silver;
+}
+
+select{
+    width: 45%;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    outline-color:#3e2723 ;
+    resize: none; /* Bloqueia a possibilidade do usuário editar o tamanho da caixa de texto */
+}
+
+form>span{
+    font-family: Arial;
+    font-size: 12px;
+}
+
+input[type=submit]{
+    padding: 10px 30px;
+    border: 0;
+    background-color: #3e2723;
+    color: white;
+    cursor: pointer; /* Mouse vira uma mão (como se fosse um link) */
+    display: block;
+    margin: 10px auto 20px auto;
+}
+
 footer{
     background-color: #3e2723;
     display: flex;
